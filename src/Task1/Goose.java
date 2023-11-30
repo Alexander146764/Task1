@@ -11,6 +11,16 @@ public class Goose extends Animal{
         super();
     }
 
+    @Override
+    public void speak() {
+
+    }
+
+    @Override
+    public void run() {
+
+    }
+
 
 }
 

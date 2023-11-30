@@ -15,4 +15,14 @@ public class Turtle extends Animal {
     public void fly() {
         System.out.println("the " + getClass().getSimpleName() + " does not fly");;
     }
+
+    @Override
+    public void speak() {
+
+    }
+
+    @Override
+    public void run() {
+
+    }
 }

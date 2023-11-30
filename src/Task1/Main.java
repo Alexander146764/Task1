@@ -25,6 +25,10 @@ public class Main {
         fish.swim();
         goose.waterFowl();
         turtle.fly();
+        VeterinaryClinic clinic = new VeterinaryClinic();
+        clinic.addPatient(cat).addPatient(dog);
+        // System.out.println(clinic.getPatients());
+        System.out.println(clinic.getGoable());
     }
 
 }

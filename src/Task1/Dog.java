@@ -10,4 +10,19 @@ public class Dog extends Animal{
     public Dog(String name, Illness illness, String ownerName, LocalDate birthday) {
         super(name, illness, ownerName, birthday);
     }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void speak() {
+
+    }
+
+    @Override
+    public void run() {
+        System.out.println("dog run");
+    }
 }

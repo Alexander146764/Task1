@@ -2,8 +2,8 @@ package Task1;
 
 import java.time.LocalDate;
 
-public class Animal {//абстракция класса
-    private String name;
+public abstract class Animal {//абстракция класса
+    protected String name;
     public Illness illness;
     private String ownerName;
     private LocalDate birthday;
@@ -58,6 +58,19 @@ public class Animal {//абстракция класса
         System.out.println("the " + getClass().getSimpleName() + " swims");}
     public void waterFowl(){
         System.out.println(getClass().getSimpleName() + " can fly, swim and walk");}
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", illness=" + illness +
+                ", ownerName='" + ownerName + '\'' +
+                ", birthday=" + birthday +
+                '}';
     }
+
+    public abstract void speak();
+
+    public abstract void run();
+}
 
 

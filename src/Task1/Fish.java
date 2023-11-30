@@ -15,4 +15,14 @@ public class Fish extends Animal {
         System.out.println("the " + getClass().getSimpleName() + " does not walk");
     }
 
+    @Override
+    public void speak() {
+
+    }
+
+    @Override
+    public void run() {
+
+    }
+
 }

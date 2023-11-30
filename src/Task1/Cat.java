@@ -15,4 +15,22 @@ public class Cat extends Animal{
         System.out.println("the " + getClass().getSimpleName() + " does not fly");
     }
 
+    @Override
+    public String getName() {
+        return name;
+    }
+
+
+
+    @Override
+    public void speak() {
+        System.out.println("meow");
+    }
+
+    @Override
+    public void run() {
+        System.out.println("cat run");
+    }
+
+
 }
