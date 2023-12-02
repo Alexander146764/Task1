@@ -2,7 +2,7 @@ package Task1;
 
 import java.time.LocalDate;
 
-public class Cat extends Animal{
+public abstract class Cat extends Animal implements Speakble, Goable{
     public Cat() {
         super();
     }
@@ -30,6 +30,16 @@ public class Cat extends Animal{
     @Override
     public void run() {
         System.out.println("cat run");
+    }
+
+    @Override
+    public void Goable() {
+        System.out.println();
+    }
+
+    @Override
+    public double getRunSpeed() {
+return 5.5;
     }
 
 

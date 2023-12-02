@@ -2,7 +2,7 @@ package Task1;
 
 import java.time.LocalDate;
 
-public class Fish extends Animal {
+public abstract class Fish extends Animal implements Swimable{
     public Fish() {
         super();
     }
@@ -24,5 +24,11 @@ public class Fish extends Animal {
     public void run() {
 
     }
+    @Override
+    public void Swimable(){
+
 
 }
+
+   }
+

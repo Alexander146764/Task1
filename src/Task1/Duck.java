@@ -2,12 +2,12 @@ package Task1;
 
 import java.time.LocalDate;
 
-public class Goose extends Animal implements Swimable,Flyable,Speakble,Goable{
-    public Goose() {
+public class Duck extends Animal implements Swimable,Flyable,Speakble,Goable{
+    public Duck() {
         super();
     }
 
-    public Goose(String name, Illness illness, String ownerName, LocalDate birthday) {
+    public Duck(String name, Illness illness, String ownerName, LocalDate birthday) {
         super();
     }
 
@@ -38,13 +38,7 @@ public class Goose extends Animal implements Swimable,Flyable,Speakble,Goable{
 
 
     @Override
-    public double getSwimSpeed() {
-        return Swimable.super.getSwimSpeed();
-    }
-
-    @Override
     public double getRunSpeed() {
         return Flyable.super.getRunSpeed();
     }
 }
-

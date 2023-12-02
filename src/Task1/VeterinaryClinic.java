@@ -27,4 +27,35 @@ public class VeterinaryClinic {
         }
         return result;
     }
+        public List<Flyable> getFlyable(){
+            List<Flyable> result = new ArrayList<>();
+            for (Animal animal:patients){
+                if (animal instanceof Flyable){
+                    result.add((Flyable) animal);
+                }
+            }
+            return result;
+
+        }
+    public List<Speakble> getSpeakble(){
+        List<Speakble> result = new ArrayList<>();
+        for (Animal animal:patients){
+            if (animal instanceof Speakble){
+                result.add((Speakble) animal);
+            }
+        }
+        return result;
+    }
+    public List<Swimable> getSwimable(){
+        List<Swimable> result = new ArrayList<>();
+        for (Animal animal:patients){
+            if (animal instanceof Swimable){
+                result.add((Swimable) animal);
+            }
+        }
+        return result;}
 }
+
+
+
+

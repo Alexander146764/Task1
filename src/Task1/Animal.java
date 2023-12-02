@@ -67,10 +67,15 @@ public abstract class Animal {//абстракция класса
                 ", birthday=" + birthday +
                 '}';
     }
-
     public abstract void speak();
 
     public abstract void run();
+
+    public abstract void Goable();
+
+    public abstract void Flyable();
+
+    public abstract void Swimable();
 }
 
 
